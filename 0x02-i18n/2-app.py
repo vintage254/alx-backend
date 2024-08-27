@@ -15,11 +15,11 @@ class Config:
 app.config.from_object(Config)
 
 @babel.localeselector
-def get_locale():
+def get_locale()-> str:
     """Determine the best match with our supported languages"""
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
-@app.route('/', strict_slashes=False)
+@app.route('/', methods=["GET"], strict_slashes=False)
 def index():
     """Route for the home page"""
     return render_template('2-index.html')
