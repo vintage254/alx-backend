@@ -17,8 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
+
 msgid "home_title"
 msgstr "Welcome to Holberton"
 
 msgid "home_header"
 msgstr "Hello world!"
+
+msgid "current_time_is"
+msgstr "The current time is %(current_time)s."
